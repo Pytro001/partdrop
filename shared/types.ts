@@ -177,7 +177,7 @@ export interface InspectionResult {
   photo_name: string | null
   measurements: { id: string; name: string; nominal: number; tol: number; measured: number | null }[]
   deterministic: { verdict: 'PASS' | 'FAIL'; rows: { id: string; name: string; nominal: number; tol: number; measured: number | null; deviation: number | null; pass: boolean }[] }
-  ai: { verdict: 'PASS' | 'FAIL' | 'REVIEW'; confidence: number; reasons: string[]; visual: string[]; model: string; mode: 'live' | 'replay'; latency_ms: number }
+  ai: { verdict: 'PASS' | 'FAIL' | 'REVIEW'; confidence: number; reasons: string[]; visual: string[]; hole_count_seen?: number | null; differences?: string[]; model: string; mode: 'live' | 'replay'; latency_ms: number }
   decision: 'CAPTURE' | 'HOLD' | 'VOID'
   decision_reason: string
 }

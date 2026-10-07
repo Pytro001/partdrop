@@ -7,7 +7,7 @@
       "order_id": "ord_0025"
      },
      "name": "get_order",
-     "toolUseId": "tooluse_uvXbypCYyLVSi0KcB3r0Bu",
+     "toolUseId": "tooluse_BwEJdOgZOCpqGzvPfrYcYh",
      "type": "tool_use"
     }
    }
@@ -20,10 +20,10 @@
   "cacheReadInputTokens": 0,
   "cacheWriteInputTokenCount": 0,
   "cacheWriteInputTokens": 0,
-  "inputTokens": 1759,
+  "inputTokens": 1750,
   "outputTokens": 58,
   "serverToolUsage": {},
-  "totalTokens": 1817
+  "totalTokens": 1808
  },
- "latency_ms": 2274
+ "latency_ms": 2107
 }

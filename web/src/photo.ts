@@ -7,6 +7,7 @@ import { partMesh } from './buyer/PartViewer.tsx'
 
 const q = new URLSearchParams(location.search)
 const ref = q.get('part') || 'flange'
+const REF = q.has('ref') // clean top view of the CAD, used as the inspection reference image
 const W = 1600, H = 1200
 
 let s = 99
@@ -88,10 +89,20 @@ async function main() {
   scene.add(fill)
   const cam = new THREE.PerspectiveCamera(30, W / H, 1, 5000)
   const r0 = Math.max(size.x, size.z) * 1.05 + 60
-  cam.position.set(r0 * 0.25, r0 * 1.55, r0 * 1.25)
+  cam.position.set(r0 * 0.2, r0 * 2.1, r0 * 0.95)
   cam.lookAt(0, size.y * 0.2, 12)
+  if (REF) {
+    plate.visible = false; rl.visible = false
+    scene.background = new THREE.Color(0xeef1f4)
+    ;(m.children[0] as THREE.Object3D).visible = true
+    m.rotation.y = 0
+    const r1 = Math.max(size.x, size.z) * 1.9
+    cam.position.set(0, r1 * 1.7, r1 * 0.55)
+    cam.lookAt(0, 0, 0)
+  }
   renderer.render(scene, cam)
   // film grain overlay
+  if (REF) { (document.getElementById('g') as HTMLCanvasElement).style.display = 'none'; (document.getElementById('v') as HTMLElement).style.display = 'none'; (window as any).__done = true; return }
   const g = (document.getElementById('g') as HTMLCanvasElement).getContext('2d')!
   const img = g.createImageData(W, H)
   for (let i = 0; i < img.data.length; i += 4) { const v = rnd() * 255; img.data[i] = img.data[i + 1] = img.data[i + 2] = v; img.data[i + 3] = 255 }

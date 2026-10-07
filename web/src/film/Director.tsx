@@ -125,6 +125,10 @@ async function story() {
   btn.click()
   await tween(0.35, k => set({ cursor: { ...ov.cursor!, down: 1 - k } }))
   await until(() => !!h('buyer').state().order?.paypal?.authorization_id, 30)
+  await wait(0.3)
+  const right2 = $('.buyer .right')!
+  const top1 = right2.scrollTop
+  await tween(0.8, k => { right2.scrollTop = top1 + (right2.scrollHeight - right2.clientHeight - top1) * k })
   await moveTo('[data-film=chips]', 1.2)
   caption('The money is held by PayPal until the part passes inspection')
   await wait(8)
@@ -171,8 +175,11 @@ async function story() {
   caption('Every money movement is logged with the evidence behind it')
   h('shop').setTab('ledger')
   await wait(1)
-  const firstRow = $('.ag-center-cols-container .ag-row')
-  if (firstRow) await click('.ag-center-cols-container .ag-row[row-index="1"]', 1)
+  const row = $('.ag-row[row-index="1"]')
+  if (row) { const r = row.getBoundingClientRect(); await moveTo({ x: r.left + 300, y: r.top + r.height / 2 }, 1) }
+  await tween(0.25, k => set({ cursor: { ...ov.cursor!, down: k } }))
+  h('ledger').pick(1)
+  await tween(0.35, k => set({ cursor: { ...ov.cursor!, down: 1 - k } }))
   await wait(7)
 
   // 8. buyer agent

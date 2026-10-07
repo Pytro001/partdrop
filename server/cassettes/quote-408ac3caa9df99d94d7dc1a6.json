@@ -1,0 +1,39 @@
+{
+ "message": {
+  "content": [
+   {
+    "toolUse": {
+     "input": {
+      "estimate_id": "est_0022",
+      "summary": "3-axis milling on VMC 2 is most cost-effective for this angle bracket.",
+      "reasons": [
+       "Hidden area 3-axis is 0%, confirming all features accessible with 3-axis machining",
+       "4 through holes at 6.58mm diameter align with standard 3-axis drilling operations",
+       "VMC 2 offers 5-day lead time versus 14-day requirement, providing schedule buffer",
+       "Unit price $41.40 is 14% lower than 5-axis alternative at $47.93"
+      ],
+      "risks": [
+       "Tight leg thickness tolerance of ±0.05mm requires careful setup and tool selection"
+      ]
+     },
+     "name": "submit_quote",
+     "toolUseId": "tooluse_EPS2n4Z6r6aYNq2fgzI6vT",
+     "type": "tool_use"
+    }
+   }
+  ],
+  "role": "assistant"
+ },
+ "stopReason": "tool_use",
+ "usage": {
+  "cacheReadInputTokenCount": 0,
+  "cacheReadInputTokens": 0,
+  "cacheWriteInputTokenCount": 0,
+  "cacheWriteInputTokens": 0,
+  "inputTokens": 3492,
+  "outputTokens": 226,
+  "serverToolUsage": {},
+  "totalTokens": 3718
+ },
+ "latency_ms": 6801
+}

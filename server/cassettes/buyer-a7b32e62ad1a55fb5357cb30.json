@@ -13,10 +13,10 @@
   "cacheReadInputTokens": 0,
   "cacheWriteInputTokenCount": 0,
   "cacheWriteInputTokens": 0,
-  "inputTokens": 2034,
+  "inputTokens": 2025,
   "outputTokens": 54,
   "serverToolUsage": {},
-  "totalTokens": 2088
+  "totalTokens": 2079
  },
- "latency_ms": 2720
+ "latency_ms": 2639
 }

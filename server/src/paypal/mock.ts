@@ -88,7 +88,12 @@ export function mockRouter(opts: { publicBase: () => string; webhookTarget: () =
   })
   r.use(express.json())
 
-  // idempotency: same PayPal-Request-Id returns the stored response
+  // idempotency: same PayPal-Request-Id returns the stored response, before any state check
+  function replayed(q: Request, s: Response) {
+    const rid = q.headers['paypal-request-id'] as string | undefined
+    if (rid && requestIds.has(rid)) { s.status(200).json(requestIds.get(rid)); return true }
+    return false
+  }
   function idem(q: Request, s: Response, make: () => [number, unknown]) {
     const rid = q.headers['paypal-request-id'] as string | undefined
     if (rid && requestIds.has(rid)) return s.status(200).json(requestIds.get(rid))
@@ -158,6 +163,7 @@ export function mockRouter(opts: { publicBase: () => string; webhookTarget: () =
   })
 
   r.post('/v2/checkout/orders/:id/authorize', (q, s) => {
+    if (replayed(q, s)) return
     const o = orders.get(String(q.params.id))
     if (!o) return err(s, 404, 'RESOURCE_NOT_FOUND', 'INVALID_RESOURCE_ID', 'Specified resource ID does not exist.')
     if (o.intent !== 'AUTHORIZE') return err(s, 422, 'UNPROCESSABLE_ENTITY', 'ACTION_DOES_NOT_MATCH_INTENT', 'Order was created with an intent to CAPTURE.')
@@ -195,6 +201,7 @@ export function mockRouter(opts: { publicBase: () => string; webhookTarget: () =
   })
 
   r.post('/v2/payments/authorizations/:id/capture', (q, s) => {
+    if (replayed(q, s)) return
     const a = auths.get(String(q.params.id))
     if (!a) return err(s, 404, 'RESOURCE_NOT_FOUND', 'INVALID_RESOURCE_ID', 'Specified resource ID does not exist.')
     if (a.status === 'VOIDED') return err(s, 422, 'UNPROCESSABLE_ENTITY', 'AUTHORIZATION_VOIDED', 'A voided authorization cannot be captured.')
@@ -231,6 +238,7 @@ export function mockRouter(opts: { publicBase: () => string; webhookTarget: () =
   })
 
   r.post('/v2/payments/authorizations/:id/void', (q, s) => {
+    if (replayed(q, s)) return
     const a = auths.get(String(q.params.id))
     if (!a) return err(s, 404, 'RESOURCE_NOT_FOUND', 'INVALID_RESOURCE_ID', 'Specified resource ID does not exist.')
     if (a.status === 'CAPTURED') return err(s, 422, 'UNPROCESSABLE_ENTITY', 'PREVIOUSLY_CAPTURED', 'Authorization has been previously captured and hence cannot be voided.')

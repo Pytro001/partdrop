@@ -2,17 +2,12 @@
  "message": {
   "content": [
    {
-    "text": "Now let me get a quote for 50 units with a 14-day deadline:"
-   },
-   {
     "toolUse": {
      "input": {
-      "part_ref": "bracket",
-      "quantity": 50,
-      "need_by_days": 14
+      "order_id": "ord_0025"
      },
-     "name": "get_quote",
-     "toolUseId": "tooluse_0KYYKQyu5lAeFRQAHxisB8",
+     "name": "get_order",
+     "toolUseId": "tooluse_Trww6ynhRPmLBDgJWbwoPf",
      "type": "tool_use"
     }
    }
@@ -25,10 +20,10 @@
   "cacheReadInputTokens": 0,
   "cacheWriteInputTokenCount": 0,
   "cacheWriteInputTokens": 0,
-  "inputTokens": 1233,
-  "outputTokens": 113,
+  "inputTokens": 1760,
+  "outputTokens": 58,
   "serverToolUsage": {},
-  "totalTokens": 1346
+  "totalTokens": 1818
  },
- "latency_ms": 4047
+ "latency_ms": 2131
 }

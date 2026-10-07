@@ -9,7 +9,7 @@
       "quantity": 50
      },
      "name": "estimate_job",
-     "toolUseId": "tooluse_XV6UK4eWUmvdOuJLMSaKCe",
+     "toolUseId": "tooluse_HzKdMxRGMtUk9BGQnxqgU2",
      "type": "tool_use"
     }
    },
@@ -21,7 +21,7 @@
       "quantity": 50
      },
      "name": "estimate_job",
-     "toolUseId": "tooluse_ArIstWQGoAQTpQVLzkiSlj",
+     "toolUseId": "tooluse_L0lVF5hBdiM7MC9Gw5o90l",
      "type": "tool_use"
     }
    },
@@ -33,7 +33,7 @@
       "quantity": 50
      },
      "name": "estimate_job",
-     "toolUseId": "tooluse_lAcuLWsQXU1xAW2BMrGd3n",
+     "toolUseId": "tooluse_OCG0YGVVX4ue7jzZ1TgTNa",
      "type": "tool_use"
     }
    }
@@ -51,5 +51,5 @@
   "serverToolUsage": {},
   "totalTokens": 2960
  },
- "latency_ms": 3546
+ "latency_ms": 3137
 }

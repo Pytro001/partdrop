@@ -1,0 +1,34 @@
+{
+ "message": {
+  "content": [
+   {
+    "text": "Now let me get a quote for 50 units with a 14-day deadline:"
+   },
+   {
+    "toolUse": {
+     "input": {
+      "part_ref": "bracket",
+      "quantity": 50,
+      "need_by_days": 14
+     },
+     "name": "get_quote",
+     "toolUseId": "tooluse_NTePUgagjNz0IYAxumnvlg",
+     "type": "tool_use"
+    }
+   }
+  ],
+  "role": "assistant"
+ },
+ "stopReason": "tool_use",
+ "usage": {
+  "cacheReadInputTokenCount": 0,
+  "cacheReadInputTokens": 0,
+  "cacheWriteInputTokenCount": 0,
+  "cacheWriteInputTokens": 0,
+  "inputTokens": 1233,
+  "outputTokens": 113,
+  "serverToolUsage": {},
+  "totalTokens": 1346
+ },
+ "latency_ms": 3616
+}

@@ -223,7 +223,7 @@ function Inspection({ order, ledger, onChange }: { order: any; ledger: LedgerEnt
           <div style={{ display: 'grid', gap: 12, animation: 'slidein .4s ease both' }} data-film="verdict">
             <div className="verdict">
               <div className={`vcard ${result.ai.verdict.toLowerCase()}`}>
-                <div className="h"><span>Claude vision inspector</span><span className="mono">{Math.round(result.ai.confidence * 100)}%</span></div>
+                <div className="h"><span>Claude vision vs CAD</span><span className="mono">{result.ai.hole_count_seen != null && q?.drawing ? `holes ${result.ai.hole_count_seen}/${q.drawing.hole_count} · ` : ''}{Math.round(result.ai.confidence * 100)}%</span></div>
                 <div className="big">{result.ai.verdict}</div>
                 <ul>{result.ai.reasons.map((r: string, i: number) => <li key={i}>{r}</li>)}{result.ai.visual.map((r: string, i: number) => <li key={'v' + i}>{r}</li>)}</ul>
               </div>
@@ -247,6 +247,7 @@ function Inspection({ order, ledger, onChange }: { order: any; ledger: LedgerEnt
 // ---------------- ledger ----------------
 function Ledger({ rows }: { rows: LedgerEntry[] }) {
   const [pick, setPick] = useState<LedgerEntry | null>(null)
+  useEffect(() => film.register('ledger', { pick: (i: number) => setPick(rows[i] ?? null) }))
   return (
     <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) 380px', gap: 16, flex: 1, minHeight: 0 }}>
       <div style={{ minHeight: 0 }}>

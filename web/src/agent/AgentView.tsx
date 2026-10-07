@@ -82,7 +82,7 @@ export function AgentView() {
             <div className="panel-h">Order {order.id}</div>
             <div className="panel-b" style={{ display: 'grid', gap: 12 }}>
               <div className="price">{money(order.total)}<small>{order.part_name} ×{order.quantity}</small></div>
-              <MoneyChips state={order.state} only={['CREATED', 'AUTHORIZED', 'CAPTURED']} xl />
+              <MoneyChips state={order.state} only={['CREATED', 'AUTHORIZED', 'CAPTURED']} lg />
               <div className="money-note">PayPal order <span className="mono">{order.paypal.order_id}</span> {order.paypal.order_status} · authorization <span className="mono">{order.paypal.authorization_id}</span> {order.paypal.authorization_status}{order.job && <> · booked on <b>{order.job.machine_id.toUpperCase()}</b></>}</div>
             </div>
           </div>

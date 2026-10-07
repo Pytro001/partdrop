@@ -1,0 +1,43 @@
+{
+ "message": {
+  "content": [
+   {
+    "toolUse": {
+     "input": {
+      "verdict": "PASS",
+      "confidence": 0.92,
+      "reasons": [
+       "All 6 bolt holes present and correctly positioned on bolt circle, matching CAD reference",
+       "Tolerance check passed for all dimensions: OD, bore, thickness, hub, PCD, and bolt holes",
+       "Measurements show realistic deviations, not copied nominal values, and are internally consistent",
+       "No visible defects: surface finish appears appropriate, no burrs, cracks, or damage evident"
+      ],
+      "visual": [
+       "Circular aluminum flange with central bore and raised hub, 6 bolt holes on pitch circle",
+       "Machined surface finish consistent with Ra 3.2 specification, bore appears smooth",
+       "Part geometry matches CAD reference, no missing features or extra cuts visible"
+      ],
+      "hole_count_seen": 6,
+      "differences": []
+     },
+     "name": "report_inspection",
+     "toolUseId": "tooluse_tiAp8eUxjNuvRU0EapeuXz",
+     "type": "tool_use"
+    }
+   }
+  ],
+  "role": "assistant"
+ },
+ "stopReason": "tool_use",
+ "usage": {
+  "cacheReadInputTokenCount": 0,
+  "cacheReadInputTokens": 0,
+  "cacheWriteInputTokenCount": 0,
+  "cacheWriteInputTokens": 0,
+  "inputTokens": 4773,
+  "outputTokens": 267,
+  "serverToolUsage": {},
+  "totalTokens": 5040
+ },
+ "latency_ms": 7512
+}

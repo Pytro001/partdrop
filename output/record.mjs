@@ -13,7 +13,7 @@ const FPS = 30
 const dir = new URL('.', import.meta.url).pathname
 mkdirSync(dir + 'stills', { recursive: true })
 // seconds into the film for poster stills
-const STILLS = { '01-inbox': 4, '02-part': 20, '03-quote': 40, '04-authorized': 62, '05-gantt': 74, '06-floor': 93, '07-inspection': 128, '08-agent': 170, '09-close': 186 }
+const STILLS = { '01-inbox': 4, '02-part': 15, '03-quote': 33, '04-authorized': 51, '05-gantt': 63, '06-floor': 83, '07-inspection': 109, '08-ledger': 116, '09-agent': 141, '10-close': 150 }
 
 for (let k = 0; k < 60; k++) { try { if ((await fetch('http://localhost:8306/api/health')).ok) break } catch { /* not up yet */ } await new Promise(r => setTimeout(r, 1000)) }
 const b = await launch()
