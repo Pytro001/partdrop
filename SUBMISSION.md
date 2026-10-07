@@ -12,7 +12,7 @@ Drop a CAD file, get a price in seconds, pay with PayPal. The money only moves t
 Best Use of PayPal + AI, Best Use of Agentic Commerce, Best Demo Delivery, Bryntum, AG Grid, Render
 
 ## Links
-- Repo: [REPO] (https://github.com/Pytro001/partdrop, public, MIT)
+- Repo: https://github.com/Pytro001/partdrop (https://github.com/Pytro001/partdrop, public, MIT)
 - Video: [VIDEO]
 - Live demo: [DEMO]
 - Test logins: buyer@demo / partdrop and shop@demo / partdrop. PayPal runs in MOCK mode unless sandbox keys are set (the badge in the top bar says which).
