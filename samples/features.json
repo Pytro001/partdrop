@@ -1,0 +1,94 @@
+{
+ "bracket": {
+  "fileName": "bracket.step",
+  "format": "step",
+  "triangles": 720,
+  "volume_mm3": 29334,
+  "surface_area_mm2": 12119.6,
+  "bbox_mm": [
+   60,
+   40,
+   46
+  ],
+  "through_holes": 4,
+  "hole_features": 4,
+  "hole_estimate": 4,
+  "smallest_hole_mm": 6.58,
+  "min_wall_mm": 4,
+  "thin_wall": false,
+  "hidden_area_3axis_pct": 0,
+  "hidden_area_5axis_pct": 0,
+  "constant_thickness_mm": null,
+  "bend_estimate": 0,
+  "shells": 1
+ },
+ "flange": {
+  "fileName": "flange.step",
+  "format": "step",
+  "triangles": 2050,
+  "volume_mm3": 122519.4,
+  "surface_area_mm2": 29287,
+  "bbox_mm": [
+   119.97,
+   119.98,
+   20
+  ],
+  "through_holes": 7,
+  "hole_features": 7,
+  "hole_estimate": 7,
+  "smallest_hole_mm": 8.98,
+  "min_wall_mm": 8.32,
+  "thin_wall": false,
+  "hidden_area_3axis_pct": 0,
+  "hidden_area_5axis_pct": 0,
+  "constant_thickness_mm": null,
+  "bend_estimate": 0,
+  "shells": 1
+ },
+ "injector": {
+  "fileName": "injector.step",
+  "format": "step",
+  "triangles": 21476,
+  "volume_mm3": 61836.2,
+  "surface_area_mm2": 16330.2,
+  "bbox_mm": [
+   60,
+   60,
+   38
+  ],
+  "through_holes": 29,
+  "hole_features": 33,
+  "hole_estimate": 33,
+  "smallest_hole_mm": 1,
+  "min_wall_mm": 2.39,
+  "thin_wall": false,
+  "hidden_area_3axis_pct": 21.9,
+  "hidden_area_5axis_pct": 21.8,
+  "constant_thickness_mm": null,
+  "bend_estimate": 0,
+  "shells": 1
+ },
+ "cover": {
+  "fileName": "cover.step",
+  "format": "step",
+  "triangles": 736,
+  "volume_mm3": 7762.2,
+  "surface_area_mm2": 11049.7,
+  "bbox_mm": [
+   80,
+   50,
+   18
+  ],
+  "through_holes": 5,
+  "hole_features": 4,
+  "hole_estimate": 4,
+  "smallest_hole_mm": 4.19,
+  "min_wall_mm": 1.5,
+  "thin_wall": false,
+  "hidden_area_3axis_pct": 0,
+  "hidden_area_5axis_pct": 0,
+  "constant_thickness_mm": 1.5,
+  "bend_estimate": 2,
+  "shells": 1
+ }
+}

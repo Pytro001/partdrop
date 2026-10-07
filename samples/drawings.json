@@ -1,0 +1,192 @@
+{
+  "bracket": {
+    "title": "Angle bracket",
+    "part_no": "PD-BRK-060",
+    "material": "Aluminium 6061-T6",
+    "finish": "As machined, deburr all edges",
+    "qty_hint": 50,
+    "features": [
+      {
+        "id": "L",
+        "name": "Overall length",
+        "nominal": 60.0,
+        "tol": 0.1
+      },
+      {
+        "id": "W",
+        "name": "Base depth",
+        "nominal": 40.0,
+        "tol": 0.1
+      },
+      {
+        "id": "H",
+        "name": "Overall height",
+        "nominal": 46.0,
+        "tol": 0.1
+      },
+      {
+        "id": "T",
+        "name": "Leg thickness",
+        "nominal": 6.0,
+        "tol": 0.05
+      },
+      {
+        "id": "D",
+        "name": "Hole diameter (4x)",
+        "nominal": 6.6,
+        "tol": 0.1
+      },
+      {
+        "id": "P",
+        "name": "Hole pitch",
+        "nominal": 36.0,
+        "tol": 0.08
+      }
+    ],
+    "hole_count": 4,
+    "volume_mm3": 29330.9,
+    "bbox_mm": [
+      60.0,
+      40.0,
+      46.0
+    ]
+  },
+  "flange": {
+    "title": "Pipe flange",
+    "part_no": "PD-FLG-120",
+    "material": "Aluminium 6061-T6",
+    "finish": "Bore Ra 1.6, rest Ra 3.2",
+    "qty_hint": 10,
+    "features": [
+      {
+        "id": "OD",
+        "name": "Outside diameter",
+        "nominal": 120.0,
+        "tol": 0.1
+      },
+      {
+        "id": "B",
+        "name": "Bore diameter",
+        "nominal": 50.0,
+        "tol": 0.025
+      },
+      {
+        "id": "T",
+        "name": "Flange thickness",
+        "nominal": 12.0,
+        "tol": 0.05
+      },
+      {
+        "id": "HD",
+        "name": "Hub diameter",
+        "nominal": 70.0,
+        "tol": 0.1
+      },
+      {
+        "id": "PCD",
+        "name": "Bolt circle",
+        "nominal": 95.0,
+        "tol": 0.1
+      },
+      {
+        "id": "D",
+        "name": "Bolt hole (6x)",
+        "nominal": 9.0,
+        "tol": 0.1
+      }
+    ],
+    "hole_count": 6,
+    "volume_mm3": 122574.5,
+    "bbox_mm": [
+      120.0,
+      120.0,
+      20.0
+    ]
+  },
+  "injector": {
+    "title": "Injector face",
+    "part_no": "PD-INJ-060",
+    "material": "Inconel 718",
+    "finish": "As printed, face lapped",
+    "qty_hint": 2,
+    "features": [
+      {
+        "id": "OD",
+        "name": "Body diameter",
+        "nominal": 60.0,
+        "tol": 0.1
+      },
+      {
+        "id": "H",
+        "name": "Body height",
+        "nominal": 24.0,
+        "tol": 0.1
+      },
+      {
+        "id": "BD",
+        "name": "Feed boss diameter",
+        "nominal": 18.0,
+        "tol": 0.1
+      },
+      {
+        "id": "O",
+        "name": "Orifice diameter (24x)",
+        "nominal": 1.0,
+        "tol": 0.05
+      },
+      {
+        "id": "W",
+        "name": "Manifold to face wall",
+        "nominal": 2.3,
+        "tol": 0.15
+      }
+    ],
+    "hole_count": 33,
+    "volume_mm3": 68489.9,
+    "bbox_mm": [
+      60.0,
+      60.0,
+      38.0
+    ]
+  },
+  "cover": {
+    "title": "Sheet metal cover",
+    "part_no": "PD-CVR-080",
+    "material": "Aluminium 5052-H32, 1.5 mm",
+    "finish": "Deburr, no paint",
+    "qty_hint": 25,
+    "features": [
+      {
+        "id": "L",
+        "name": "Outside width",
+        "nominal": 80.0,
+        "tol": 0.2
+      },
+      {
+        "id": "W",
+        "name": "Depth",
+        "nominal": 50.0,
+        "tol": 0.2
+      },
+      {
+        "id": "H",
+        "name": "Flange height",
+        "nominal": 18.0,
+        "tol": 0.2
+      },
+      {
+        "id": "D",
+        "name": "Hole diameter (4x)",
+        "nominal": 4.2,
+        "tol": 0.1
+      }
+    ],
+    "hole_count": 4,
+    "volume_mm3": 7761.9,
+    "bbox_mm": [
+      80.0,
+      50.0,
+      18.0
+    ]
+  }
+}

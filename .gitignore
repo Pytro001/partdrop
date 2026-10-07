@@ -1,0 +1,16 @@
+node_modules/
+web/dist/
+dist/
+.env
+.env.*
+!.env.example
+data/*.json
+!data/.keep
+.DS_Store
+*.log
+output/*.mp4
+!output/partdrop-screen.mp4
+output/tmp/
+.venv/
+web/public/occt/
+data/uploads/

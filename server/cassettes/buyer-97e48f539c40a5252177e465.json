@@ -1,0 +1,29 @@
+{
+ "message": {
+  "content": [
+   {
+    "toolUse": {
+     "input": {
+      "order_id": "ord_0025"
+     },
+     "name": "get_order",
+     "toolUseId": "tooluse_uvXbypCYyLVSi0KcB3r0Bu",
+     "type": "tool_use"
+    }
+   }
+  ],
+  "role": "assistant"
+ },
+ "stopReason": "tool_use",
+ "usage": {
+  "cacheReadInputTokenCount": 0,
+  "cacheReadInputTokens": 0,
+  "cacheWriteInputTokenCount": 0,
+  "cacheWriteInputTokens": 0,
+  "inputTokens": 1759,
+  "outputTokens": 58,
+  "serverToolUsage": {},
+  "totalTokens": 1817
+ },
+ "latency_ms": 2274
+}

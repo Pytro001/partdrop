@@ -1,0 +1,37 @@
+{
+ "message": {
+  "content": [
+   {
+    "toolUse": {
+     "input": {
+      "estimate_id": "est_0021",
+      "summary": "3-axis milling on VMC 1 delivers lowest cost for this angle bracket with standard features.",
+      "reasons": [
+       "Hidden area 3-axis is 0%, confirming all features accessible with 3-axis milling",
+       "4 through holes at 6.58mm diameter are standard for 3-axis drilling operations",
+       "Compact bounding box 60x40x46mm fits well within VMC envelope 760x400x500mm",
+       "Unit price $41.40 is $6.53 cheaper than 5-axis at same lead time"
+      ],
+      "risks": []
+     },
+     "name": "submit_quote",
+     "toolUseId": "tooluse_UwnhxoIrjzhxkxfOswJGKo",
+     "type": "tool_use"
+    }
+   }
+  ],
+  "role": "assistant"
+ },
+ "stopReason": "tool_use",
+ "usage": {
+  "cacheReadInputTokenCount": 0,
+  "cacheReadInputTokens": 0,
+  "cacheWriteInputTokenCount": 0,
+  "cacheWriteInputTokens": 0,
+  "inputTokens": 3492,
+  "outputTokens": 211,
+  "serverToolUsage": {},
+  "totalTokens": 3703
+ },
+ "latency_ms": 6419
+}

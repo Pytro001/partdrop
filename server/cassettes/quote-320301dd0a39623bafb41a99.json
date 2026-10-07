@@ -1,0 +1,40 @@
+{
+ "message": {
+  "content": [
+   {
+    "toolUse": {
+     "input": {
+      "estimate_id": "est_0010",
+      "summary": "3-axis milling is most cost-effective for this pipe flange with standard geometry.",
+      "reasons": [
+       "Hidden area 0% confirms all features accessible to 3-axis machining",
+       "Bore tolerance ±0.025mm and Ra 1.6 finish achievable on VMC",
+       "7 through holes on 95mm bolt circle easily programmed",
+       "Outside diameter 120mm fits well within 760x400mm envelope"
+      ],
+      "risks": [
+       "Bore finish Ra 1.6 requires careful tooling and feeds",
+       "Flange thickness tolerance ±0.05mm needs process control"
+      ]
+     },
+     "name": "submit_quote",
+     "toolUseId": "tooluse_LGkJm1Ib0RBdMBC4Cp8VMW",
+     "type": "tool_use"
+    }
+   }
+  ],
+  "role": "assistant"
+ },
+ "stopReason": "tool_use",
+ "usage": {
+  "cacheReadInputTokenCount": 0,
+  "cacheReadInputTokens": 0,
+  "cacheWriteInputTokenCount": 0,
+  "cacheWriteInputTokens": 0,
+  "inputTokens": 4693,
+  "outputTokens": 215,
+  "serverToolUsage": {},
+  "totalTokens": 4908
+ },
+ "latency_ms": 6899
+}

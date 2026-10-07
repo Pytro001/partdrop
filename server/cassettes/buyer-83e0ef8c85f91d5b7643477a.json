@@ -1,0 +1,32 @@
+{
+ "message": {
+  "content": [
+   {
+    "text": "I'll help you order 50 angle brackets in 6061 aluminum. Let me first search for the part in your library, then get a quote to verify it meets your budget and timeline."
+   },
+   {
+    "toolUse": {
+     "input": {
+      "query": "angle bracket 6061"
+     },
+     "name": "find_part",
+     "toolUseId": "tooluse_gcvYKSVRA6g3ZFErjg3Npp",
+     "type": "tool_use"
+    }
+   }
+  ],
+  "role": "assistant"
+ },
+ "stopReason": "tool_use",
+ "usage": {
+  "cacheReadInputTokenCount": 0,
+  "cacheReadInputTokens": 0,
+  "cacheWriteInputTokenCount": 0,
+  "cacheWriteInputTokens": 0,
+  "inputTokens": 1067,
+  "outputTokens": 99,
+  "serverToolUsage": {},
+  "totalTokens": 1166
+ },
+ "latency_ms": 4050
+}

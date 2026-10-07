@@ -1,0 +1,55 @@
+{
+ "message": {
+  "content": [
+   {
+    "toolUse": {
+     "input": {
+      "machine_id": "vmc-1",
+      "material_id": "al6061",
+      "quantity": 10
+     },
+     "name": "estimate_job",
+     "toolUseId": "tooluse_ZbxvpheJ7XpFpsBPUS6e16",
+     "type": "tool_use"
+    }
+   },
+   {
+    "toolUse": {
+     "input": {
+      "machine_id": "vmc-2",
+      "material_id": "al6061",
+      "quantity": 10
+     },
+     "name": "estimate_job",
+     "toolUseId": "tooluse_hBnp6FtEwq78rM5Nl1HdLn",
+     "type": "tool_use"
+    }
+   },
+   {
+    "toolUse": {
+     "input": {
+      "machine_id": "5ax-1",
+      "material_id": "al6061",
+      "quantity": 10
+     },
+     "name": "estimate_job",
+     "toolUseId": "tooluse_AyAbH21v2ROwJHL6EnQOg4",
+     "type": "tool_use"
+    }
+   }
+  ],
+  "role": "assistant"
+ },
+ "stopReason": "tool_use",
+ "usage": {
+  "cacheReadInputTokenCount": 0,
+  "cacheReadInputTokens": 0,
+  "cacheWriteInputTokenCount": 0,
+  "cacheWriteInputTokens": 0,
+  "inputTokens": 3924,
+  "outputTokens": 239,
+  "serverToolUsage": {},
+  "totalTokens": 4163
+ },
+ "latency_ms": 6410
+}

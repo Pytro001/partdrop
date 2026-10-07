@@ -1,0 +1,22 @@
+{
+ "message": {
+  "content": [
+   {
+    "text": "Order placed for 50 angle brackets in 6061 aluminum at $2,069.90, well within your $2,500 budget with a 6-day lead time. Payment has been authorized and funds are held pending inspection."
+   }
+  ],
+  "role": "assistant"
+ },
+ "stopReason": "end_turn",
+ "usage": {
+  "cacheReadInputTokenCount": 0,
+  "cacheReadInputTokens": 0,
+  "cacheWriteInputTokenCount": 0,
+  "cacheWriteInputTokens": 0,
+  "inputTokens": 2034,
+  "outputTokens": 54,
+  "serverToolUsage": {},
+  "totalTokens": 2088
+ },
+ "latency_ms": 2720
+}
